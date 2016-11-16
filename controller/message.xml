@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>F:/dropbox sync/Dropbox/RoboCup Preperation/Electronics/Software/Code/Motorcontroller/VHDL/Final code/controller</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/clockdivider.vhd(20): </Dynamic>
+            <Dynamic>clkdiv</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/clockdivider.vhd</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/clockdivider.vhd(32): </Dynamic>
+            <Dynamic>clkdiv</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/clockdivider.vhd</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/commutation.vhd(28): </Dynamic>
+            <Dynamic>commutation</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/commutation.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/commutation.vhd(50): </Dynamic>
+            <Dynamic>commutation</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/commutation.vhd</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/hallinput.vhd(22): </Dynamic>
+            <Dynamic>hall</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/hallinput.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/hallinput.vhd(41): </Dynamic>
+            <Dynamic>hall</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/hallinput.vhd</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pwm_gen.vhd(25): </Dynamic>
+            <Dynamic>pwmgenerator</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pwm_gen.vhd</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pwm_gen.vhd(35): </Dynamic>
+            <Dynamic>pwmgenerator</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pwm_gen.vhd</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/spi loopbacktest v2.vhd(21): </Dynamic>
+            <Dynamic>spi</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/spi loopbacktest v2.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/spi loopbacktest v2.vhd(54): </Dynamic>
+            <Dynamic>spi</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/spi loopbacktest v2.vhd</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(23): </Dynamic>
+            <Dynamic>spi_loopback_top</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(74): </Dynamic>
+            <Dynamic>arch</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>74</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(9): </Dynamic>
+            <Dynamic>pid</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(33): </Dynamic>
+            <Dynamic>pid</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(72): </Dynamic>
+            <Dynamic>SPI_loopback_Top</Dynamic>
+            <Dynamic>arch</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>72</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(115): </Dynamic>
+            <Dynamic>PWMdut_m2[9]</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(116): </Dynamic>
+            <Dynamic>PWMdut_m3[9]</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>116</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(117): </Dynamic>
+            <Dynamic>PWMdut_m4[9]</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>117</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(119): </Dynamic>
+            <Dynamic>dir_m1</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>119</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(120): </Dynamic>
+            <Dynamic>dir_m2</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>120</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(121): </Dynamic>
+            <Dynamic>dir_m3</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>121</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd(122): </Dynamic>
+            <Dynamic>dir_m4</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/toplevelfinal.vhd</Navigation>
+            <Navigation>122</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i1 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i2 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i3 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i4 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i5 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i6 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i7 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i8 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i9 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pid.vhd(44): Latch \PID_I/dlatchrs_6_i10 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pwm_gen.vhd(62): </Dynamic>
+            <Dynamic>\PWM_I_M4/PWM_14</Dynamic>
+            <Navigation>f:/dropbox sync/dropbox/robocup preperation/electronics/software/code/motorcontroller/vhdl/final code/pwm_gen.vhd</Navigation>
+            <Navigation>62</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

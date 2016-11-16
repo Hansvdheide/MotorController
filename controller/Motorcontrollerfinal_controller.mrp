@@ -1,0 +1,798 @@
+
+       Lattice Mapping Report File for Design Module 'SPI_loopback_Top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     Motorcontrollerfinal_controller.ngd -o
+     Motorcontrollerfinal_controller_map.ncd -pr
+     Motorcontrollerfinal_controller.prf -mp Motorcontrollerfinal_controller.mrp
+     -lpf F:/dropbox sync/Dropbox/RoboCup
+     Preperation/Electronics/Software/Code/Motorcontroller/VHDL/Final
+     code/controller/Motorcontrollerfinal_controller.lpf -lpf F:/dropbox
+     sync/Dropbox/RoboCup
+     Preperation/Electronics/Software/Code/Motorcontroller/VHDL/Final
+     code/Motorcontrollerfinal.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.8.0.115.3
+Mapped on:  11/08/16  18:44:37
+
+Design Summary
+--------------
+
+   Number of registers:    361 out of  7209 (5%)
+      PFU registers:          361 out of  6864 (5%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       189 out of  3432 (6%)
+      SLICEs as Logic/ROM:    189 out of  3432 (6%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          6 out of  3432 (0%)
+   Number of LUT4s:        240 out of  6864 (3%)
+      Number used as logic LUTs:        228
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       12
+      Number used as shift registers:     0
+   Number of PIO sites used: 45 + 4(JTAG) out of 115 (43%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+
+                                    Page 1
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+Design Summary (cont)
+---------------------
+     ripple logic.
+   Number of clocks:  3
+     Net clkout_c: 170 loads, 170 rising, 0 falling (Driver: OSCInst0 )
+     Net clk_1mhz: 12 loads, 12 rising, 0 falling (Driver: CLKDIV_I/clk_1mhz_21
+     )
+     Net pwm_clk: 7 loads, 7 rising, 0 falling (Driver: CLKDIV_I/pwm_clk_22 )
+   Number of Clock Enables:  2
+     Net SPI_I/clkout_c_enable_96: 48 loads, 48 LSLICEs
+     Net SPI_I/enable_m1_N_765: 50 loads, 50 LSLICEs
+   Number of LSRs:  9
+     Net LED2_c: 3 loads, 3 LSLICEs
+     Net LED3_c: 3 loads, 3 LSLICEs
+     Net LED4_c: 3 loads, 3 LSLICEs
+     Net hallsense_m1_2: 2 loads, 2 LSLICEs
+     Net hallsense_m1_1: 1 loads, 1 LSLICEs
+     Net CLKDIV_I/n759: 3 loads, 3 LSLICEs
+     Net SPI_I/n1352: 1 loads, 1 LSLICEs
+     Net PWM_I_M1/n760: 6 loads, 6 LSLICEs
+     Net PWM_I_M1/cnt_9: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net SPI_I/CSlatched: 197 loads
+     Net SPI_I/n1354: 95 loads
+     Net SPI_I/n1358: 93 loads
+     Net SPI_I/enable_m1_N_765: 50 loads
+     Net SPI_I/clkout_c_enable_96: 48 loads
+     Net CLKDIV_I/count_0: 6 loads
+     Net PWM_I_M1/n760: 6 loads
+     Net CLKDIV_I/count_1: 5 loads
+     Net SPI_I/SCKlatched: 5 loads
+     Net CLKDIV_I/count_2: 4 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| MISO                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED1                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED2                | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| LED3                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED4                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clkout              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m1[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m1[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m1[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m1[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m1[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m1[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m2[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m2[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m2[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m2[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m2[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m2[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m3[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m3[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m3[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m3[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m3[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m3[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m4[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MA_m4[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m4[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MB_m4[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m4[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MC_m4[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CS                  | INPUT     | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| SCK                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MOSI                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_A_m1              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_B_m1              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_C_m1              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_A_m2              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_B_m2              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_C_m2              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_A_m3              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_B_m3              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_C_m3              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_A_m4              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_B_m4              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| H_C_m4              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i746 undriven or does not drive anything - clipped.
+Signal n702 was merged into signal SPI_I/MISO_N_762
+Signal COM_I_M3/enable_N_886 was merged into signal LED3_c
+Signal COM_I_M2/enable_N_886 was merged into signal LED2_c
+Signal n735 was merged into signal hallsense_m1_2
+Signal COM_I_M4/enable_N_886 was merged into signal LED4_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal PWM_I_M1/cnt_34_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/cnt_34_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/cnt_34_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal PWM_I_M1/cnt_34_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Block SPI_I/i98_1_lut was optimized away.
+Block COM_I_M3/enable_I_0_1_lut was optimized away.
+Block COM_I_M2/enable_I_0_1_lut was optimized away.
+Block HALL_I_M1/i131_1_lut was optimized away.
+Block COM_I_M4/enable_I_0_1_lut was optimized away.
+Block i1 was optimized away.
+
+
+                                    Page 4
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+Memory Usage
+------------
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              PIN,NODE clkout_c
+  OSC Nominal Frequency (MHz):                      38.00
+
+ASIC Components
+---------------
+
+Instance Name: OSCInst0
+         Type: OSCH
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'LED1_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'LED1_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 355 
+
+     Type and instance name of component: 
+   Register : COM_I_M4/MospairA_i1
+   Register : COM_I_M4/MospairB_i2
+   Register : COM_I_M4/MospairC_i2
+   Register : COM_I_M4/MospairA_i2
+   Register : HALL_I_M1/Hall_sns_i0
+   Register : HALL_I_M1/hall1_lat_38
+   Register : HALL_I_M1/hall2_lat_39
+   Register : HALL_I_M1/hall3_lat_40
+   Register : HALL_I_M1/Hall_sns_i1
+   Register : HALL_I_M1/Hall_sns_i2
+   Register : HALL_I_M2/Hall_sns_i0
+   Register : HALL_I_M2/hall1_lat_38
+
+                                    Page 5
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : HALL_I_M2/hall2_lat_39
+   Register : HALL_I_M2/hall3_lat_40
+   Register : HALL_I_M2/Hall_sns_i1
+   Register : HALL_I_M2/Hall_sns_i2
+   Register : COM_I_M2/MospairA_i1
+   Register : COM_I_M2/MospairB_i2
+   Register : COM_I_M2/MospairC_i2
+   Register : COM_I_M2/MospairA_i2
+   Register : HALL_I_M4/hall1_lat_38
+   Register : HALL_I_M4/hall2_lat_39
+   Register : HALL_I_M4/hall3_lat_40
+   Register : HALL_I_M4/Hall_sns_i0
+   Register : HALL_I_M4/Hall_sns_i1
+   Register : HALL_I_M4/Hall_sns_i2
+   Register : HALL_I_M3/Hall_sns_i0
+   Register : HALL_I_M3/hall1_lat_38
+   Register : HALL_I_M3/hall2_lat_39
+   Register : HALL_I_M3/hall3_lat_40
+   Register : HALL_I_M3/Hall_sns_i1
+   Register : HALL_I_M3/Hall_sns_i2
+   Register : COM_I_M3/MospairA_i1
+   Register : COM_I_M3/MospairB_i2
+   Register : COM_I_M3/MospairC_i2
+   Register : COM_I_M3/MospairA_i2
+   Register : CLKDIV_I/pwm_buf_20
+   Register : CLKDIV_I/clk_1mhz_21
+   Register : CLKDIV_I/pwm_clk_22
+   Register : CLKDIV_I/count_33__i0
+   Register : CLKDIV_I/mhz_buf_19
+   Register : CLKDIV_I/count_33__i4
+   Register : CLKDIV_I/count_33__i3
+   Register : CLKDIV_I/count_33__i2
+   Register : CLKDIV_I/count_33__i1
+   Register : SPI_I/recv_buffer_i0_i0
+   Register : SPI_I/SCKold_85
+   Register : SPI_I/CSlatched_86
+   Register : SPI_I/SCKlatched_87
+   Register : SPI_I/temp_buffer_i0_i0
+   Register : SPI_I/MISOb_89
+   Register : SPI_I/MISO_100
+   Register : SPI_I/i80_105
+   Register : SPI_I/CSold_84
+   Register : SPI_I/enable_m4_104
+   Register : SPI_I/enable_m1_101
+   Register : SPI_I/enable_m2_102
+   Register : SPI_I/enable_m3_103
+   Register : SPI_I/recv_buffer_i0_i1
+   Register : SPI_I/recv_buffer_i0_i2
+   Register : SPI_I/recv_buffer_i0_i3
+   Register : SPI_I/recv_buffer_i0_i4
+   Register : SPI_I/recv_buffer_i0_i5
+   Register : SPI_I/recv_buffer_i0_i6
+   Register : SPI_I/recv_buffer_i0_i7
+   Register : SPI_I/recv_buffer_i0_i8
+   Register : SPI_I/recv_buffer_i0_i9
+   Register : SPI_I/recv_buffer_i0_i10
+
+                                    Page 6
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : SPI_I/recv_buffer_i0_i11
+   Register : SPI_I/recv_buffer_i0_i12
+   Register : SPI_I/recv_buffer_i0_i13
+   Register : SPI_I/recv_buffer_i0_i14
+   Register : SPI_I/recv_buffer_i0_i15
+   Register : SPI_I/recv_buffer_i0_i16
+   Register : SPI_I/recv_buffer_i0_i17
+   Register : SPI_I/recv_buffer_i0_i18
+   Register : SPI_I/recv_buffer_i0_i19
+   Register : SPI_I/recv_buffer_i0_i20
+   Register : SPI_I/recv_buffer_i0_i21
+   Register : SPI_I/recv_buffer_i0_i22
+   Register : SPI_I/recv_buffer_i0_i23
+   Register : SPI_I/recv_buffer_i0_i24
+   Register : SPI_I/recv_buffer_i0_i25
+   Register : SPI_I/recv_buffer_i0_i26
+   Register : SPI_I/recv_buffer_i0_i27
+   Register : SPI_I/recv_buffer_i0_i28
+   Register : SPI_I/recv_buffer_i0_i29
+   Register : SPI_I/recv_buffer_i0_i30
+   Register : SPI_I/recv_buffer_i0_i31
+   Register : SPI_I/recv_buffer_i0_i32
+   Register : SPI_I/recv_buffer_i0_i33
+   Register : SPI_I/recv_buffer_i0_i34
+   Register : SPI_I/recv_buffer_i0_i35
+   Register : SPI_I/recv_buffer_i0_i36
+   Register : SPI_I/recv_buffer_i0_i37
+   Register : SPI_I/recv_buffer_i0_i38
+   Register : SPI_I/recv_buffer_i0_i39
+   Register : SPI_I/recv_buffer_i0_i40
+   Register : SPI_I/recv_buffer_i0_i41
+   Register : SPI_I/recv_buffer_i0_i42
+   Register : SPI_I/recv_buffer_i0_i43
+   Register : SPI_I/recv_buffer_i0_i44
+   Register : SPI_I/recv_buffer_i0_i45
+   Register : SPI_I/recv_buffer_i0_i46
+   Register : SPI_I/recv_buffer_i0_i47
+   Register : SPI_I/recv_buffer_i0_i48
+   Register : SPI_I/recv_buffer_i0_i49
+   Register : SPI_I/recv_buffer_i0_i50
+   Register : SPI_I/recv_buffer_i0_i51
+   Register : SPI_I/recv_buffer_i0_i52
+   Register : SPI_I/recv_buffer_i0_i53
+   Register : SPI_I/recv_buffer_i0_i54
+   Register : SPI_I/recv_buffer_i0_i55
+   Register : SPI_I/recv_buffer_i0_i56
+   Register : SPI_I/recv_buffer_i0_i57
+   Register : SPI_I/recv_buffer_i0_i58
+   Register : SPI_I/recv_buffer_i0_i59
+   Register : SPI_I/recv_buffer_i0_i60
+   Register : SPI_I/recv_buffer_i0_i61
+   Register : SPI_I/recv_buffer_i0_i62
+   Register : SPI_I/recv_buffer_i0_i63
+   Register : SPI_I/recv_buffer_i0_i64
+   Register : SPI_I/recv_buffer_i0_i65
+   Register : SPI_I/recv_buffer_i0_i66
+
+                                    Page 7
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : SPI_I/recv_buffer_i0_i67
+   Register : SPI_I/recv_buffer_i0_i68
+   Register : SPI_I/recv_buffer_i0_i69
+   Register : SPI_I/recv_buffer_i0_i70
+   Register : SPI_I/recv_buffer_i0_i71
+   Register : SPI_I/recv_buffer_i0_i72
+   Register : SPI_I/recv_buffer_i0_i73
+   Register : SPI_I/recv_buffer_i0_i74
+   Register : SPI_I/recv_buffer_i0_i75
+   Register : SPI_I/recv_buffer_i0_i76
+   Register : SPI_I/recv_buffer_i0_i77
+   Register : SPI_I/recv_buffer_i0_i78
+   Register : SPI_I/recv_buffer_i0_i79
+   Register : SPI_I/recv_buffer_i0_i80
+   Register : SPI_I/recv_buffer_i0_i81
+   Register : SPI_I/recv_buffer_i0_i82
+   Register : SPI_I/recv_buffer_i0_i83
+   Register : SPI_I/recv_buffer_i0_i84
+   Register : SPI_I/recv_buffer_i0_i85
+   Register : SPI_I/recv_buffer_i0_i86
+   Register : SPI_I/recv_buffer_i0_i87
+   Register : SPI_I/recv_buffer_i0_i88
+   Register : SPI_I/recv_buffer_i0_i89
+   Register : SPI_I/recv_buffer_i0_i90
+   Register : SPI_I/recv_buffer_i0_i91
+   Register : SPI_I/recv_buffer_i0_i92
+   Register : SPI_I/recv_buffer_i0_i93
+   Register : SPI_I/recv_buffer_i0_i94
+   Register : SPI_I/recv_buffer_i0_i95
+   Register : SPI_I/send_buffer_i1
+   Register : SPI_I/send_buffer_i2
+   Register : SPI_I/send_buffer_i3
+   Register : SPI_I/send_buffer_i4
+   Register : SPI_I/send_buffer_i5
+   Register : SPI_I/send_buffer_i6
+   Register : SPI_I/send_buffer_i7
+   Register : SPI_I/send_buffer_i8
+   Register : SPI_I/send_buffer_i9
+   Register : SPI_I/send_buffer_i10
+   Register : SPI_I/send_buffer_i11
+   Register : SPI_I/send_buffer_i12
+   Register : SPI_I/send_buffer_i13
+   Register : SPI_I/send_buffer_i14
+   Register : SPI_I/send_buffer_i15
+   Register : SPI_I/send_buffer_i16
+   Register : SPI_I/send_buffer_i17
+   Register : SPI_I/send_buffer_i18
+   Register : SPI_I/send_buffer_i19
+   Register : SPI_I/send_buffer_i20
+   Register : SPI_I/send_buffer_i21
+   Register : SPI_I/send_buffer_i22
+   Register : SPI_I/send_buffer_i23
+   Register : SPI_I/send_buffer_i24
+   Register : SPI_I/send_buffer_i25
+   Register : SPI_I/send_buffer_i26
+   Register : SPI_I/send_buffer_i27
+
+                                    Page 8
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : SPI_I/send_buffer_i28
+   Register : SPI_I/send_buffer_i29
+   Register : SPI_I/send_buffer_i30
+   Register : SPI_I/send_buffer_i31
+   Register : SPI_I/send_buffer_i32
+   Register : SPI_I/send_buffer_i33
+   Register : SPI_I/send_buffer_i34
+   Register : SPI_I/send_buffer_i35
+   Register : SPI_I/send_buffer_i36
+   Register : SPI_I/send_buffer_i37
+   Register : SPI_I/send_buffer_i38
+   Register : SPI_I/send_buffer_i39
+   Register : SPI_I/send_buffer_i40
+   Register : SPI_I/send_buffer_i41
+   Register : SPI_I/send_buffer_i42
+   Register : SPI_I/send_buffer_i43
+   Register : SPI_I/send_buffer_i44
+   Register : SPI_I/send_buffer_i45
+   Register : SPI_I/send_buffer_i46
+   Register : SPI_I/send_buffer_i47
+   Register : SPI_I/send_buffer_i48
+   Register : SPI_I/send_buffer_i49
+   Register : SPI_I/send_buffer_i50
+   Register : SPI_I/send_buffer_i51
+   Register : SPI_I/send_buffer_i52
+   Register : SPI_I/send_buffer_i53
+   Register : SPI_I/send_buffer_i54
+   Register : SPI_I/send_buffer_i55
+   Register : SPI_I/send_buffer_i56
+   Register : SPI_I/send_buffer_i57
+   Register : SPI_I/send_buffer_i58
+   Register : SPI_I/send_buffer_i59
+   Register : SPI_I/send_buffer_i60
+   Register : SPI_I/send_buffer_i61
+   Register : SPI_I/send_buffer_i62
+   Register : SPI_I/send_buffer_i63
+   Register : SPI_I/send_buffer_i64
+   Register : SPI_I/send_buffer_i65
+   Register : SPI_I/send_buffer_i66
+   Register : SPI_I/send_buffer_i67
+   Register : SPI_I/send_buffer_i68
+   Register : SPI_I/send_buffer_i69
+   Register : SPI_I/send_buffer_i70
+   Register : SPI_I/send_buffer_i71
+   Register : SPI_I/send_buffer_i72
+   Register : SPI_I/send_buffer_i73
+   Register : SPI_I/send_buffer_i74
+   Register : SPI_I/send_buffer_i75
+   Register : SPI_I/send_buffer_i76
+   Register : SPI_I/send_buffer_i77
+   Register : SPI_I/send_buffer_i78
+   Register : SPI_I/send_buffer_i79
+   Register : SPI_I/send_buffer_i80
+   Register : SPI_I/send_buffer_i81
+   Register : SPI_I/send_buffer_i82
+   Register : SPI_I/send_buffer_i83
+
+                                    Page 9
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : SPI_I/send_buffer_i84
+   Register : SPI_I/send_buffer_i85
+   Register : SPI_I/send_buffer_i86
+   Register : SPI_I/send_buffer_i87
+   Register : SPI_I/send_buffer_i88
+   Register : SPI_I/send_buffer_i89
+   Register : SPI_I/send_buffer_i90
+   Register : SPI_I/send_buffer_i91
+   Register : SPI_I/send_buffer_i92
+   Register : SPI_I/send_buffer_i93
+   Register : SPI_I/send_buffer_i94
+   Register : SPI_I/send_buffer_i95
+   Register : SPI_I/temp_buffer_i0_i1
+   Register : SPI_I/temp_buffer_i0_i2
+   Register : SPI_I/temp_buffer_i0_i3
+   Register : SPI_I/temp_buffer_i0_i4
+   Register : SPI_I/temp_buffer_i0_i5
+   Register : SPI_I/temp_buffer_i0_i6
+   Register : SPI_I/temp_buffer_i0_i7
+   Register : SPI_I/temp_buffer_i0_i8
+   Register : SPI_I/temp_buffer_i0_i9
+   Register : SPI_I/temp_buffer_i0_i10
+   Register : SPI_I/temp_buffer_i0_i11
+   Register : SPI_I/temp_buffer_i0_i12
+   Register : SPI_I/temp_buffer_i0_i13
+   Register : SPI_I/temp_buffer_i0_i14
+   Register : SPI_I/temp_buffer_i0_i15
+   Register : SPI_I/temp_buffer_i0_i16
+   Register : SPI_I/temp_buffer_i0_i17
+   Register : SPI_I/temp_buffer_i0_i18
+   Register : SPI_I/temp_buffer_i0_i19
+   Register : SPI_I/temp_buffer_i0_i20
+   Register : SPI_I/temp_buffer_i0_i21
+   Register : SPI_I/temp_buffer_i0_i22
+   Register : SPI_I/temp_buffer_i0_i23
+   Register : SPI_I/temp_buffer_i0_i24
+   Register : SPI_I/temp_buffer_i0_i25
+   Register : SPI_I/temp_buffer_i0_i26
+   Register : SPI_I/temp_buffer_i0_i27
+   Register : SPI_I/temp_buffer_i0_i28
+   Register : SPI_I/temp_buffer_i0_i29
+   Register : SPI_I/temp_buffer_i0_i30
+   Register : SPI_I/temp_buffer_i0_i31
+   Register : SPI_I/temp_buffer_i0_i32
+   Register : SPI_I/temp_buffer_i0_i33
+   Register : SPI_I/temp_buffer_i0_i34
+   Register : SPI_I/temp_buffer_i0_i35
+   Register : SPI_I/temp_buffer_i0_i36
+   Register : SPI_I/temp_buffer_i0_i37
+   Register : SPI_I/temp_buffer_i0_i38
+   Register : SPI_I/temp_buffer_i0_i39
+   Register : SPI_I/temp_buffer_i0_i40
+   Register : SPI_I/temp_buffer_i0_i41
+   Register : SPI_I/temp_buffer_i0_i42
+   Register : SPI_I/temp_buffer_i0_i43
+   Register : SPI_I/temp_buffer_i0_i44
+
+                                   Page 10
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : SPI_I/temp_buffer_i0_i45
+   Register : SPI_I/temp_buffer_i0_i46
+   Register : SPI_I/temp_buffer_i0_i47
+   Register : SPI_I/temp_buffer_i0_i48
+   Register : SPI_I/temp_buffer_i0_i49
+   Register : SPI_I/temp_buffer_i0_i50
+   Register : SPI_I/temp_buffer_i0_i51
+   Register : SPI_I/temp_buffer_i0_i52
+   Register : SPI_I/temp_buffer_i0_i53
+   Register : SPI_I/temp_buffer_i0_i54
+   Register : SPI_I/temp_buffer_i0_i55
+   Register : SPI_I/temp_buffer_i0_i56
+   Register : SPI_I/temp_buffer_i0_i57
+   Register : SPI_I/temp_buffer_i0_i58
+   Register : SPI_I/temp_buffer_i0_i59
+   Register : SPI_I/temp_buffer_i0_i60
+   Register : SPI_I/temp_buffer_i0_i61
+   Register : SPI_I/temp_buffer_i0_i62
+   Register : SPI_I/temp_buffer_i0_i63
+   Register : SPI_I/temp_buffer_i0_i64
+   Register : SPI_I/temp_buffer_i0_i65
+   Register : SPI_I/temp_buffer_i0_i66
+   Register : SPI_I/temp_buffer_i0_i67
+   Register : SPI_I/temp_buffer_i0_i68
+   Register : SPI_I/temp_buffer_i0_i69
+   Register : SPI_I/temp_buffer_i0_i70
+   Register : SPI_I/temp_buffer_i0_i71
+   Register : SPI_I/temp_buffer_i0_i72
+   Register : SPI_I/temp_buffer_i0_i73
+   Register : SPI_I/temp_buffer_i0_i74
+   Register : SPI_I/temp_buffer_i0_i75
+   Register : SPI_I/temp_buffer_i0_i76
+   Register : SPI_I/temp_buffer_i0_i77
+   Register : SPI_I/temp_buffer_i0_i78
+   Register : SPI_I/temp_buffer_i0_i79
+   Register : SPI_I/temp_buffer_i0_i80
+   Register : SPI_I/temp_buffer_i0_i81
+   Register : SPI_I/temp_buffer_i0_i82
+   Register : SPI_I/temp_buffer_i0_i83
+   Register : SPI_I/temp_buffer_i0_i84
+   Register : SPI_I/temp_buffer_i0_i85
+   Register : SPI_I/temp_buffer_i0_i86
+   Register : SPI_I/temp_buffer_i0_i87
+   Register : SPI_I/temp_buffer_i0_i88
+   Register : SPI_I/temp_buffer_i0_i89
+   Register : SPI_I/temp_buffer_i0_i90
+   Register : SPI_I/temp_buffer_i0_i91
+   Register : SPI_I/temp_buffer_i0_i92
+   Register : SPI_I/temp_buffer_i0_i93
+   Register : SPI_I/temp_buffer_i0_i94
+   Register : SPI_I/temp_buffer_i0_i95
+   Register : SPI_I/CSold_84_rep_8
+   Register : PWM_I_M1/cnt_34__i0
+   Register : PWM_I_M1/cnt_34__i9
+   Register : PWM_I_M1/cnt_34__i8
+   Register : PWM_I_M1/cnt_34__i7
+
+                                   Page 11
+
+
+
+
+Design:  SPI_loopback_Top                              Date:  11/08/16  18:44:37
+
+GSR Usage (cont)
+----------------
+   Register : PWM_I_M1/cnt_34__i6
+   Register : PWM_I_M1/cnt_34__i5
+   Register : PWM_I_M1/cnt_34__i4
+   Register : PWM_I_M1/cnt_34__i3
+   Register : PWM_I_M1/cnt_34__i2
+   Register : PWM_I_M1/cnt_34__i1
+   Register : PWM_I_M1/PWM_14
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'LED1_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 3 
+
+     Type and instance name of component: 
+   Register : COM_I_M1/MospairB_i2
+   Register : COM_I_M1/MospairC_i2
+   Register : COM_I_M1/MospairA_i2
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 38 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 12
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights
+     reserved.
